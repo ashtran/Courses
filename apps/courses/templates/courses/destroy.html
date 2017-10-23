@@ -1,0 +1,18 @@
+<html lang= "en">
+  <head>
+    <meta charset="utf-8">
+    <title>Delete a course</title>
+    <meta name="description" content= "Insert description of webpage">
+  </head>
+  <body>
+    <div class=confirm>
+      <h2>Are you sure you want to delete the following?</h2>
+      <p>Name:{{course.name}}</p>
+      <p>Description: {{course.description}}</p>
+      <p>
+        <a href="/"><button>No</button></a>
+        <a href="/{{course.id}}/destroy/confirm"><button>Yes! I want to delete this</button></a>
+      </p>
+
+  </body>
+</html>
